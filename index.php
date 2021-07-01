@@ -1,3 +1,13 @@
+<?php
+
+    if($_GET["Booked"] == true){
+        echo "<div class= 'alert-success'>Booked Successfully!!</div>";
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
