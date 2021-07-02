@@ -4,6 +4,11 @@
 
     $NameError = "";
     $EmailError = "";
+    $NumberError = "";
+    $BirthPlaceError = "";
+    $BookingDateError = "";
+    $DateOfBirthError = "";
+    $TimeOfBirthError = "";
 
     function validateData($data){
         $data = trim(stripslashes($data));
@@ -56,7 +61,6 @@
 
         if($_POST["TimeOfBirth"]){
             $TimeOfBirth = $_POST["TimeOfBirth"];
-            $TimeOfBirth = validateData($TimeOfBirth);
         }
         else{
             $TimeOfBirthError = "Plz Enter TimeOfBirth";
@@ -64,7 +68,6 @@
 
         if($_POST["DateOfBirth"]){
             $DateOfBirth = $_POST["DateOfBirth"];
-            $DateOfBirth = validateData($DateOfBirth);
         }
         else{
             $DateOfBirthError = "Plz Enter DateOfBirth";
@@ -72,7 +75,6 @@
 
         if($_POST["DateOfAppointment"]){
             $DateOfAppointment = $_POST["DateOfAppointment"];
-            $DateOfAppointment = validateData($DateOfAppointment);
         }
         else{
             $BookingDateError = "Plz Enter BookingDate";
@@ -106,28 +108,28 @@
                 <br>
                 <div class="mb-3">
     
-                    <div class= "alert-danger"><?php echo $NameError ?></div>
+                    <div class= "alert-danger"><?php echo $NameError; ?></div>
                     <input type="text" class="form-control gray-bg gray-text" placeholder="Name.." name = "Name" value = "<?php echo $_POST['Name']; ?>">
 
                 </div>
 
                 <div class="mb-3">
 
-                    <div class= "alert-danger"><?php echo $EmailError ?></div>
+                    <div class= "alert-danger"><?php echo $EmailError; ?></div>
                     <input type="email" class="form-control gray-bg gray-text" placeholder="Email.." name = "Email" value = "<?php echo $_POST['Email']; ?>">
 
                 </div>
 
                 <div class="mb-3">
 
-                    <div class= "alert-danger"><?php echo $NumberError ?></div>
+                    <div class= "alert-danger"><?php echo $NumberError; ?></div>
                     <input type="text" class="form-control gray-bg gray-text" placeholder="Mobile Number.." name = "Number" value = "<?php echo $_POST['Number']; ?>">
 
                 </div>
 
                 <div class="mb-3">
 
-                    <div class= "alert-danger"><?php echo $BirthPlaceError ?></div>
+                    <div class= "alert-danger"><?php echo $BirthPlaceError; ?></div>
                     <input type="text" class="form-control gray-bg gray-text" placeholder="BirthPlace.." name = "BirthPlace" value = "<?php echo $_POST['BirthPlace']; ?>">
 
                 </div>
@@ -135,7 +137,7 @@
                 <div class="mb-3">
                 
                     <label for="exampleInputEmail1" class="form-label text-white">Time Of Birth</label>
-                    <div class= "alert-danger"><?php echo $TimeOfBirthError ?></div>
+                    <div class= "alert-danger"><?php echo $TimeOfBirthError; ?></div>
                     <input type="time" class="form-control gray-bg gray-text" name = "TimeOfBirth" value = "<?php echo $_POST['TimeOfBirth']; ?>">
 
                 </div>
@@ -143,7 +145,7 @@
                 <div class="mb-3">
                 
                     <label for="exampleInputEmail1" class="form-label text-white">Date Of Birth</label>
-                    <div class= "alert-danger"><?php echo $DateOfBirthError ?></div>
+                    <div class= "alert-danger"><?php echo $DateOfBirthError; ?></div>
                     <input type="date" class="form-control gray-bg gray-text" placeholder="Booking Date" name = "DateOfBirth" value = "<?php echo $_POST['DateOfBirth']; ?>">
 
                 </div>
@@ -151,7 +153,7 @@
                 <div class="mb-3">
                 
                     <label for="exampleInputEmail1" class="form-label text-white">Booking Date</label>
-                    <div class= "alert-danger"><?php echo $BookingDateError ?></div>
+                    <div class= "alert-danger"><?php echo $BookingDateError; ?></div>
                     <input type="date" class="form-control gray-bg gray-text" placeholder="Booking Date" name = "DateOfAppointment" value = "<?php echo $_POST['DateOfAppointment']; ?>">
 
                 </div>

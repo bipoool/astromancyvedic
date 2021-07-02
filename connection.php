@@ -4,6 +4,8 @@
     $username = "root";
     $password = "";
 
+    
+
     try{
         $conn = new PDO("mysql:host=$server;dbname=AstromancyVedic", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -18,13 +20,17 @@
         $addAppointMentQuery->bindParam(':TimeOfBirth', $TimeOfBirth);
         $addAppointMentQuery->bindParam(':BirthPlace', $BirthPlace);
 
-        //const $query = $addAppointMentQuery;
+        $allAppointMentQuery = $conn->prepare("SELECT * FROM Appointments");
 
+        $deleteAppointmentQuery = $conn->prepare("DELETE FROM Appointments WHERE Email = :Email");
+        $deleteAppointmentQuery->bindParam(':Email', $Email);
+
+        $deleteAllAppointmentsQuery = $conn->prepare("TRUNCATE TABLE Appointments");
+       
     }catch(PDOException $e){
 
         die($e->getMessage());
 
     }
-
 
 ?>

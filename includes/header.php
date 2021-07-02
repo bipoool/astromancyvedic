@@ -17,7 +17,7 @@
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
+        <nav class="navbar navbar-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="/astromancyvedic/"><img src="/astromancyvedic/assets/img/logo.png" alt="Logo" id = "logo">AstromancyVedic</a>
                 <a class="btn btn-warning" href="">Donate Us!</a>
@@ -35,7 +35,7 @@
                             <form class="form-subscribe" id="contactForm">
                                 <!-- Email address input-->
                                 <div class="row">
-                                    <div class="center-block"><a class="btn btn-danger btn-lg" id="submitButton" href="/astromancyvedic/login.php">Book Appointment Now!</a></div>
+                                    <div class="center-block"><a class="btn btn-danger btn-lg" id="submitButton" href="/astromancyvedic/appointment.php">Book Appointment Now!</a></div>
                                 </div>
                                 <!-- Submit success message-->
                                 <!---->
