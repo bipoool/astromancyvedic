@@ -31,7 +31,7 @@
     
     echo "</table>";
     echo "<div class='d-grid gap-2 col-2 mx-auto'>
-            <a class = 'btn btn-danger center-block' href='delete.php?Email=All'>DELETE ALL!!</a>
+            <a class = 'btn btn-outline-danger center-block' href='delete.php?Email=All'>DELETE ALL!!</a>
           </div>";
 
 ?>
@@ -44,6 +44,7 @@
     include("includes/footer.php");
 
 ?>
+
 
 
 
