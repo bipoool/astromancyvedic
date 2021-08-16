@@ -86,7 +86,7 @@
                 $addAppointMentQuery->execute();
             }
             catch(PDOException $e){
-                die("There is some Error! Try again");
+                die($e->getMessage());
             }
             header("location: index.php?Booked=true");
         }

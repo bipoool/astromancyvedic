@@ -31,7 +31,7 @@ CREATE TABLE `Appointments` (
   `Name` varchar(255) NOT NULL,
   `Email` varchar(255) NOT NULL,
   `Number` bigint(15) DEFAULT NULL,
-  `DateOfBooking` date NOT NULL DEFAULT current_timestamp(),
+  `DateOfBooking` date NULL,
   `DateOfAppointment` date NOT NULL,
   `DateOfBirth` date NOT NULL,
   `TimeOfBirth` time NOT NULL,

@@ -1,8 +1,8 @@
 <?php
 
     $server = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "vip3022";
+    $password = "Vipul@212001";
 
     
 

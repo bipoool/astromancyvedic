@@ -1,8 +1,8 @@
 <?php
 
     $server = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "vip3022";
+    $password = "Vipul@212001";
 
     try{
         $conn = new PDO("mysql:host=$server;dbname=AstromancyVedic", $username, $password);
@@ -15,9 +15,6 @@
 
         $loginAdminQuery = $conn->prepare("SELECT Password, Name FROM Users Where Email = :Email");
         $loginAdminQuery->bindParam(':Email', $Email);
-
-
-        
 
     }catch(PDOException $e){
         die($e->getMessage());

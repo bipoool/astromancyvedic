@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="/astromancyvedic/"><img src="/astromancyvedic/assets/img/logo.png" alt="Logo" id = "logo">Vedic Astromancy</a>
+                <a class="navbar-brand" href="/"><img src="/assets/img/logo.png" alt="Logo" id = "logo">Vedic Astromancy</a>
                 <a class="btn btn-warning" href="">Donate Us!</a>
             </div>
         </nav>

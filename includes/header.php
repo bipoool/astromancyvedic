@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="/astromancyvedic/"><img src="/astromancyvedic/assets/img/logo.png" alt="Logo" id = "logo">Vedic Astromancy</a>
+                <a class="navbar-brand" href="/"><img src="/assets/img/logo.png" alt="Logo" id = "logo">Vedic Astromancy</a>
                 <a class="btn btn-warning" href="">Donate Us!</a>
             </div>
         </nav>
@@ -35,12 +35,8 @@
                             <form class="form-subscribe" id="contactForm">
                                 <!-- Email address input-->
                                 <div class="row">
-                                    <div class="center-block"><a class="btn btn-danger btn-lg" id="submitButton" href="/astromancyvedic/appointment.php">Book Appointment Now!</a></div>
+                                    <div class="center-block"><a class="btn btn-danger btn-lg" id="submitButton" href="/appointment.php">Book Appointment Now!</a></div>
                                 </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
                                 <div class="d-none" id="submitSuccessMessage">
                                     <div class="text-center mb-3">
                                         <div class="fw-bolder">Form submission successful!</div>
